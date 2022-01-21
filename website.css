@@ -1,0 +1,103 @@
+/*
+Table of contents
+
+01.Home
+02.About Us
+03.Services
+04.Photo gallery
+05.Contact Us
+*/
+/* Body*/
+body {
+  background-image: url(/img/img1.jpg);
+}
+/* NavBar*/
+.topnav {
+  color: sienna;
+}
+.topnav a {
+  font-size: 15px;
+  padding: 20px;
+}
+/* Services*/
+.s-heading h1 {
+  color: sienna;
+}
+.s-box-container {
+  width: 100%;
+  display: flex;
+}
+.services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Gallery*/
+
+#gallery {
+  display: flex;
+  line-height: 0;
+  -webkit-column-count: 3;
+  /*split it into 3 columns*/
+  -webkit-column-gap: 5px;
+  -moz-column-count: 3;
+  -moz-column-gap: 5px;
+  column-count: 3;
+  column-gap: 5px;
+}
+/* style images*/
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px; /*to match column gap*/
+  filter: grayscale(100%);
+}
+#gallery img:hover {
+  filter: none;
+}
+/* Table*/
+
+.table {
+  width: 100%;
+}
+th,
+td {
+  background: grey;
+  border-bottom: 2px solid;
+}
+/* Contact us*/
+form {
+  max-width: 450px;
+  margin: 50px auto;
+}
+.feedback-input {
+  color: brown;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.contact .info {
+  padding-left: 40px;
+}
+
+.contact .info span {
+  font-size: 20px;
+  color: #e0a80d;
+}
+
+.contact .info p {
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+  color: #eee;
+}
